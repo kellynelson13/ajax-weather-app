@@ -1,7 +1,18 @@
 body {
-    background-color: pink;
+    background-image: url("https://images.unsplash.com/photo-1513002749550-c59d786b8e6c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGNsb3VkJTIwYmFja2dyb3VuZHMlMjBibHVlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60");
+    background-size: cover;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh
 }
 
 p {
     display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+input {
+    padding: 10px;
 }
