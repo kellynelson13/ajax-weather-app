@@ -19,7 +19,10 @@ function displayInfo (){
     .then(function(data){
         console.log(data)
         $city.text(data.name)
-        $tem
+        $temp.text(Math.floor((data.main.temp - 273.15)* 9/5 + 32))
+        $feels.text(Math.floor((data.main.feels_like - 273.15)* 9/5 + 32))
+        $weather.text(data.weather[0].description)
+        $input.val('')
     })
 
 }
@@ -34,4 +37,4 @@ function displayInfo (){
 
 
 
-//console.log('https://api.openweathermap.org/data/2.5/weather?q=portland&appid=9b9f5972625f3491182c4d87b8132964')
+console.log('https://api.openweathermap.org/data/2.5/weather?q=portland&appid=9b9f5972625f3491182c4d87b8132964')
